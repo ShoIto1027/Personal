@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Network" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hlh-dc-4g4">
+                                <rect key="frame" x="0.0" y="170" width="600" height="430"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BLz-al-ERU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Plo-Oh-iFj">
+                                <rect key="frame" x="0.0" y="20" width="600" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="5Ms-Pw-jxQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Plo-Oh-iFj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="7ho-eg-get"/>
+                            <constraint firstAttribute="trailing" secondItem="Hlh-dc-4g4" secondAttribute="trailing" id="IkR-TO-tfB"/>
+                            <constraint firstItem="Hlh-dc-4g4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WBD-Ps-0o0"/>
+                            <constraint firstAttribute="trailing" secondItem="Plo-Oh-iFj" secondAttribute="trailing" id="WPf-TF-1Xw"/>
+                            <constraint firstItem="Hlh-dc-4g4" firstAttribute="top" secondItem="Plo-Oh-iFj" secondAttribute="bottom" id="X3f-SC-rtm"/>
+                            <constraint firstItem="Plo-Oh-iFj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="af6-FR-auT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hlh-dc-4g4" secondAttribute="bottom" id="lce-tM-OEw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Plo-Oh-iFj" id="4bR-qd-5gY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="429"/>
+        </scene>
+    </scenes>
+</document>
