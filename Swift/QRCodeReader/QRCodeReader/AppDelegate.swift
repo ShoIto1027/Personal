@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  QRCodeReader
 //
-//  Created by Aryzae on 2016/04/29.
-//  Copyright © 2016年 Aryzae. All rights reserved.
+//  Created by ShoIto on 2016/04/29.
+//  Copyright © 2016年 ShoIto. All rights reserved.
 //
 
 import UIKit

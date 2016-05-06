@@ -2,8 +2,8 @@
 //  NetworkReachability.swift
 //  Network
 //
-//  Created by Aryzae on 2016/03/09.
-//  Copyright © 2016年 Aryzae. All rights reserved.
+//  Created by ShoIto on 2016/03/09.
+//  Copyright © 2016年 ShoIto. All rights reserved.
 //
 
 import SystemConfiguration
