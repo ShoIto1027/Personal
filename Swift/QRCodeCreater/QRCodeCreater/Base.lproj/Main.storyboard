@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRCodeCreater" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QxC-DV-8Xy">
+                                <rect key="frame" x="20" y="70" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIy-8E-lfM">
+                                <rect key="frame" x="200" y="120" width="200" height="81"/>
+                                <color key="backgroundColor" red="0.73563846744223649" green="1" blue="0.95406204343617762" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Bzr-Vd-nxT"/>
+                                    <constraint firstAttribute="height" constant="81" id="aMZ-9Y-KVw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CdQ-7P-2wa"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KOE-qd-tca">
+                                <rect key="frame" x="150" y="280" width="300" height="300"/>
+                                <color key="backgroundColor" red="0.80035176699999999" green="0.80035176699999999" blue="0.80035176699999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="S9Z-ah-3Pj"/>
+                                    <constraint firstAttribute="width" constant="300" id="ZfY-0c-xAo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QxC-DV-8Xy" secondAttribute="trailing" constant="20" id="O1z-rk-FQ3"/>
+                            <constraint firstItem="QxC-DV-8Xy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Obd-Kb-yXc"/>
+                            <constraint firstItem="QxC-DV-8Xy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="b3g-xq-4IG"/>
+                            <constraint firstItem="bIy-8E-lfM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVm-MA-yU1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KOE-qd-tca" secondAttribute="bottom" constant="20" id="rKW-5m-Afi"/>
+                            <constraint firstItem="KOE-qd-tca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xMG-s6-u79"/>
+                            <constraint firstItem="bIy-8E-lfM" firstAttribute="top" secondItem="QxC-DV-8Xy" secondAttribute="bottom" constant="20" id="yQ6-w3-f3q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KOE-qd-tca" id="FXV-LB-9Fq"/>
+                        <outlet property="textField" destination="QxC-DV-8Xy" id="TB8-3A-9v3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+</document>
