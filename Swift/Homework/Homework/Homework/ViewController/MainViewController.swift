@@ -21,8 +21,6 @@ class MainViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
 // MARK: - UITableViewDataSource
@@ -41,4 +39,7 @@ extension MainViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension MainViewController: UITableViewDelegate {
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print(indexPath.row)
+    }
 }
